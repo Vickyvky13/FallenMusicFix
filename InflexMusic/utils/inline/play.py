@@ -53,6 +53,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "————————⌯—"
     else:
         bar = "—————————⌯"
+    
     buttons = [
         [
             InlineKeyboardButton(
@@ -64,10 +65,11 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [
+            InlineKeyboardButton(text="𝖳𝖱𝖠𝖣𝖨𝖭𝖦 𝖢𝖠𝖫𝖫 💵", url="https://t.me/TradingCall_Index"),
+        ],
     ]
     return buttons
-
 
 def stream_markup(_, chat_id):
     buttons = [
@@ -75,7 +77,9 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [
+            InlineKeyboardButton(text="𝖳𝖱𝖠𝖣𝖨𝖭𝖦 𝖢𝖠𝖫𝖫 💵", url="https://t.me/TradingCall_Index"),
+        ],
     ]
     return buttons
 
