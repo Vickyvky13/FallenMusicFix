@@ -1,4 +1,4 @@
-from pyrogram.types import InlineKeyboardButton
+from pyrogram.types import InlineKeyboardButton, WebAppInfo
 
 import config
 from InflexMusic import app
@@ -30,7 +30,9 @@ def private_panel(_):
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
         ],
         [
-            InlineKeyboardButton(text=_["S_B_5"], url=f"https://t.me/ilakshu"),
+            InlineKeyboardButton(
+                text=_["S_B_5"], web_app=WebAppInfo(url="https://solotree.in")
+            ),
         ],
     ]
     return buttons
