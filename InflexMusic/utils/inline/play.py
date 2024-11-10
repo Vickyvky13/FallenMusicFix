@@ -1,10 +1,7 @@
 import config
 import math
-
 from pyrogram.types import InlineKeyboardButton
-
 from InflexMusic.utils.formatters import time_to_seconds
-
 
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
@@ -26,7 +23,6 @@ def track_markup(_, videoid, user_id, channel, fplay):
         ],
     ]
     return buttons
-
 
 def stream_markup_timer(_, chat_id, played, dur):
     played_sec = time_to_seconds(played)
@@ -53,23 +49,23 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "————————⌯—"
     else:
         bar = "—————————⌯"
-    
+
     buttons = [
-    [
-        InlineKeyboardButton(
-            text=f"{played} {bar} {dur}",
-            callback_data="GetTimer",
-        )
-    ],
-    [
-        InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
-        InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
-    ],
-    [
-        InlineKeyboardButton(text="🌳𝖮𝗐𝗇𝖾𝗋𝗌🌴", url="https://t.me/FallenOfficialBot/Solo_Tree_Community"),
-    ],
-]
-return buttons
+        [
+            InlineKeyboardButton(
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
+            InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
+        ],
+        [
+            InlineKeyboardButton(text="🌳𝖮𝗐𝗇𝖾𝗋𝗌🌴", url="https://t.me/FallenOfficialBot/Solo_Tree_Community"),
+        ],
+    ]
+    return buttons
 
 def stream_markup(_, chat_id):
     buttons = [
@@ -104,7 +100,6 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     ]
     return buttons
 
-
 def livestream_markup(_, videoid, user_id, mode, channel, fplay):
     buttons = [
         [
@@ -121,7 +116,6 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         ],
     ]
     return buttons
-
 
 def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
     query = f"{query[:20]}"
