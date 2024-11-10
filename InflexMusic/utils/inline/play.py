@@ -66,7 +66,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
         ],
         [
-            InlineKeyboardButton(text="𝖳𝖱𝖠𝖣𝖨𝖭𝖦 𝖢𝖠𝖫𝖫 💵", url="https://t.me/TradingCall_Index"),
+            InlineKeyboardButton(text="🌳𝖮𝗐𝗇𝖾𝗋𝗌🌴", url="http://t.me/FallenOfficialBot/Solo_Tree_Community"),
         ],
     ]
     return buttons
