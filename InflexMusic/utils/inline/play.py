@@ -66,7 +66,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
         ],
         [
-            InlineKeyboardButton(text="🌳𝖮𝗐𝗇𝖾𝗋𝗌🌴", url="http://t.me/FallenOfficialBot/Solo_Tree_Community"),
+            InlineKeyboardButton(text="🌳𝖮𝗐𝗇𝖾𝗋𝗌🌴", url="https://t.me/FallenOfficialBot/Solo_Tree_Community"),
         ],
     ]
     return buttons
@@ -78,7 +78,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
         ],
         [
-            InlineKeyboardButton(text="🌳𝖮𝗐𝗇𝖾𝗋𝗌🌴", url="http://t.me/FallenOfficialBot/Solo_Tree_Community"),
+            InlineKeyboardButton(text="🌳𝖮𝗐𝗇𝖾𝗋𝗌🌴", url="https://t.me/FallenOfficialBot/Solo_Tree_Community"),
         ],
     ]
     return buttons
