@@ -55,21 +55,21 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "—————————⌯"
     
     buttons = [
-        [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
-        ],
-        [
-            InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
-            InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
-        ],
-        [
-            InlineKeyboardButton(text="🌳𝖮𝗐𝗇𝖾𝗋𝗌🌴", url="https://t.me/FallenOfficialBot/Solo_Tree_Community"),
-        ],
-    ]
-    return buttons
+    [
+        InlineKeyboardButton(
+            text=f"{played} {bar} {dur}",
+            callback_data="GetTimer",
+        )
+    ],
+    [
+        InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text=_["S_B_2"], url=config.SUPPORT_GROUP),
+    ],
+    [
+        InlineKeyboardButton(text="🌳𝖮𝗐𝗇𝖾𝗋𝗌🌴", url="https://t.me/FallenOfficialBot/Solo_Tree_Community"),
+    ],
+]
+return buttons
 
 def stream_markup(_, chat_id):
     buttons = [
@@ -82,7 +82,6 @@ def stream_markup(_, chat_id):
         ],
     ]
     return buttons
-
 
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
